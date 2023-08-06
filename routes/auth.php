@@ -36,3 +36,29 @@ Route::post(
 
 
 Route::resource('fileUploads', App\Http\Controllers\FileUploadController::class);
+
+Route::resource('herramientas', App\Http\Controllers\herramientasController::class);
+
+Route::resource('departamentos', App\Http\Controllers\departamentosController::class);
+
+Route::resource('areasDeTrabajos', App\Http\Controllers\Areas_De_TrabajoController::class);
+
+Route::resource('activosDeLaEmpresas', App\Http\Controllers\activos_de_la_empresaController::class);
+
+Route::resource('examples', App\Http\Controllers\exampleController::class);
+
+Route::resource('cargos', App\Http\Controllers\CargosController::class);
+
+Route::resource('analistasExamples', App\Http\Controllers\Analistas_exampleController::class);
+
+Route::resource('analistas', App\Http\Controllers\AnalistaController::class);
+
+Route::resource('misAnalistas', App\Http\Controllers\Mis_analistasController::class);
+
+Route::resource('misAnalistas', App\Http\Controllers\Mis_analistasController::class);
+
+Route::resource('misAnalistasses', App\Http\Controllers\Mis_analistassController::class);
+
+Route::resource('analists', App\Http\Controllers\AnalistController::class);
+
+Route::resource('asignars', App\Http\Controllers\AsignarController::class);

@@ -1,9 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="{{ route('dashboard') }}" class="brand-link">
-        <img src="{{url('images/logo.png')}}"
-             alt="{{ config('app.name') }} Logo"
-             class="brand-image img-circle elevation-3">
-        <span class="brand-text font-weight-light">{{ config('app.name') }}</span>
+    <a href="{{ route('dashboard') }}" class="brand-link" style="background:white;text-align:center">
+        <img src="/images/ait.png" style="width:70%;margin:auto">
     </a>
 
     <div class="sidebar">

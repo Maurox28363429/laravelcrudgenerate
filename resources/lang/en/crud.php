@@ -2,16 +2,16 @@
 
 return [
 
-    'add_new'      => 'Add New',
-    'cancel'       => 'Cancel',
-    'save'         => 'Save',
-    'edit'         => 'Edit',
-    'detail'       => 'Detail',
+    'add_new'      => 'Agregar',
+    'cancel'       => 'Cancelar',
+    'save'         => 'Guardar',
+    'edit'         => 'Editar',
+    'detail'       => 'Detalle',
     'back'         => 'Back',
-    'action'       => 'Action',
-    'id'           => 'Id',
-    'created_at'   => 'Created At',
-    'updated_at'   => 'Updated At',
-    'deleted_at'   => 'Deleted At',
+    'action'       => 'Acción',
+    'id'           => 'ID',
+    'created_at'   => 'Generación',
+    'updated_at'   => 'Actualización',
+    'deleted_at'   => 'Borrado',
     'are_you_sure' => 'Are you sure?',
 ];

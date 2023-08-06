@@ -9,7 +9,7 @@ $isDashboardActive = Request::is($urlAdmin);
 <li class="nav-item">
     <a href="{{ route('dashboard') }}" class="nav-link {{ $isDashboardActive ? 'active' : '' }}">
         <i class="nav-icon fas fa-tachometer-alt"></i>
-        <p>@lang('menu.dashboard')</p>
+        <p>Inicio</p>
     </a>
 </li>
 @endcan
@@ -21,7 +21,7 @@ $isUserActive = Request::is($urlAdmin.'*generator_builder*');
 <li class="nav-item">
     <a href="{{ route('generator_builder.index') }}" class="nav-link {{ $isUserActive ? 'active' : '' }}">
         <i class="nav-icon fas fa-coins"></i>
-        <p>@lang('menu.generator_builder.title')</p>
+        <p>Generador de CRUD</p>
     </a>
 </li>
 @endcan
@@ -35,7 +35,7 @@ $isUserActive = Request::is($urlAdmin.'*attendances*');
     <a href="{{ route('attendances.index') }}" class="nav-link {{ $isUserActive ? 'active' : '' }}">
         <i class="nav-icon fas fa-calendar-alt"></i>
 
-        <p>@lang('menu.attendances.title')</p>
+        <p>Entradas y salidas</p>
     </a>
 </li>
 @endcan
@@ -50,7 +50,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
     <a href="#" class="nav-link">
         <i class="nav-icon fas fa-shield-virus"></i>
         <p>
-            @lang('menu.user.title')
+            Seguridad
             <i class="fas fa-angle-left right"></i>
         </p>
     </a>
@@ -60,7 +60,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
             <a href="{{ route('users.index') }}" class="nav-link {{ $isUserActive ? 'active' : '' }}">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                    @lang('menu.user.users')
+                    Usuarios
                 </p>
             </a>
         </li>
@@ -70,7 +70,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
             <a href="{{ route('roles.index') }}" class="nav-link {{ $isRoleActive ? 'active' : '' }}">
                 <i class="nav-icon fas fa-user-shield"></i>
                 <p>
-                    @lang('menu.user.roles')
+                    Roles
                 </p>
             </a>
         </li>
@@ -80,7 +80,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
             <a href="{{ route('permissions.index') }}" class="nav-link {{ $isPermissionActive ? 'active' : '' }}">
                 <i class="nav-icon fas fa-shield-alt"></i>
                 <p>
-                    @lang('menu.user.permissions')
+                   Permisos
                 </p>
             </a>
         </li>
@@ -92,7 +92,63 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('fileUploads.index') }}" class="nav-link {{ Request::is('fileUploads*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-file-alt"></i>
-        <p>@lang('models/fileUploads.plural')</p>
+        <p>Archivos del CMS</p>
     </a>
 </li>
 @endcan
+<li class="nav-item">
+    <a href="{{ route('herramientas.index') }}"
+       class="nav-link {{ Request::is('herramientas*') ? 'active' : '' }}">
+        <p>Herramientas</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('departamentos.index') }}"
+       class="nav-link {{ Request::is('departamentos*') ? 'active' : '' }}">
+        <p>Departamentos</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('areasDeTrabajos.index') }}"
+       class="nav-link {{ Request::is('areasDeTrabajos*') ? 'active' : '' }}">
+        <p>Areas de trabajo</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('activosDeLaEmpresas.index') }}"
+       class="nav-link {{ Request::is('activosDeLaEmpresas*') ? 'active' : '' }}">
+        <p>Activos de la empresa</p>
+    </a>
+</li>
+
+
+
+<li class="nav-item">
+    <a href="{{ route('cargos.index') }}"
+       class="nav-link {{ Request::is('cargos*') ? 'active' : '' }}">
+        <p>@lang('models/cargos.plural')</p>
+    </a>
+</li>
+
+
+
+
+
+
+<li class="nav-item">
+    <a href="{{ route('analists.index') }}"
+       class="nav-link {{ Request::is('analists*') ? 'active' : '' }}">
+        <p>Analistas</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('asignars.index') }}"
+       class="nav-link {{ Request::is('asignars*') ? 'active' : '' }}">
+        <p>Asignar a analista</p>
+    </a>
+</li>
+

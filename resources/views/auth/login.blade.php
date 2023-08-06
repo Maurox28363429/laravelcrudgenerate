@@ -6,7 +6,9 @@ hold-transition login-page
 @section('content')
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ route('home') }}"><b>{{ config('app.name') }}</b></a>
+         <div style="text-align:center;margin:1em">
+                <img src='/images/ait.png' style='margin:auto;width:50%;' />
+            </div>
     </div>
 
     <!-- /.login-logo -->
@@ -14,7 +16,9 @@ hold-transition login-page
     <!-- /.login-box-body -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">@lang('auth.login.title')</p>
+            <div style="text-align:center;margin:1em">
+                <img src='/images/logo.png' style='margin:auto;width:50%;border-radius:50%' />
+            </div>
 
             <form method="post" action="{{ url('/login') }}">
                 @csrf
@@ -46,21 +50,21 @@ hold-transition login-page
                     <div class="col">
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember">
-                            <label for="remember">@lang('auth.login.field.remember')</label>
+                            <label for="remember">Recordar</label>
                         </div>
                     </div>
 
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary btn-block">@lang('auth.login.button.submit')</button>
+                        <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
                     </div>
 
                 </div>
             </form>
 
             <p class="mb-1">
-                <a href="{{ route('password.request') }}">@lang('auth.login.button.reset-password')</a>
+                <a href="{{ route('password.request') }}">Olvidaste tu contraseña</a>
             </p>
-            <p class="mb-1">
+            <p class="mb-1" style="display:none">
                 <a href="{{ route('register') }}" class="text-center">@lang('auth.login.button.register')</a>
             </p>
 
@@ -68,7 +72,7 @@ hold-transition login-page
         </div>
         <!-- /.login-card-body -->
     </div>
-    @include('layouts.lang')
+{{--     @include('layouts.lang') --}}
 </div>
 <!-- /.login-box -->
 @endsection

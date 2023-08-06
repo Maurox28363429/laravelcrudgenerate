@@ -45,9 +45,9 @@ class UserSeeder extends Seeder
         ]);
 
         $userSupperAdmin = $this->userRepository->create([
-            'name' => 'Nguyễn Văn Hậu',
-            'email' => 'hau@hau.xyz',
-            'password' => Hash::make('123@123@1234'),
+            'name' => 'Yelimar',
+            'email' => 'yelimar@gmail.com',
+            'password' => Hash::make('12345678'),
         ]);
         $userSupperAdmin->assignRole($roleSupperAdmin);
     }
