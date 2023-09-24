@@ -72,7 +72,31 @@
         "inView": true
     },
     {
+        "name": "serial",
+        "dbType": "text",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
         "name": "diagnostico",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "descripcion",
         "dbType": "text",
         "htmlType": "textarea",
         "validations": "",

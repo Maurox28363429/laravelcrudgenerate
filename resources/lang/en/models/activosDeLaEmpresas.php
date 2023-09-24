@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'singular' => 'activos_de_la_empresa',
-  'plural' => 'activos_de_la_empresas',
+  'singular' => 'Activo de la empresa',
+  'plural' => 'Activos de la empresa',
   'fields' => 
   array (
     'id' => 'Id',

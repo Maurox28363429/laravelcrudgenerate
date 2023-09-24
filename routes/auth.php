@@ -62,3 +62,9 @@ Route::resource('misAnalistasses', App\Http\Controllers\Mis_analistassController
 Route::resource('analists', App\Http\Controllers\AnalistController::class);
 
 Route::resource('asignars', App\Http\Controllers\AsignarController::class);
+
+Route::resource('equipo1s', App\Http\Controllers\Equipo1Controller::class);
+
+Route::resource('piezas', App\Http\Controllers\piezasController::class);
+
+Route::resource('asistencias', App\Http\Controllers\asistenciaController::class);

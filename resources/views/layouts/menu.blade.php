@@ -99,6 +99,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('herramientas.index') }}"
        class="nav-link {{ Request::is('herramientas*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Herramientas</p>
     </a>
 </li>
@@ -106,6 +107,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('departamentos.index') }}"
        class="nav-link {{ Request::is('departamentos*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Departamentos</p>
     </a>
 </li>
@@ -113,6 +115,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('areasDeTrabajos.index') }}"
        class="nav-link {{ Request::is('areasDeTrabajos*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Areas de trabajo</p>
     </a>
 </li>
@@ -120,6 +123,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('activosDeLaEmpresas.index') }}"
        class="nav-link {{ Request::is('activosDeLaEmpresas*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Activos de la empresa</p>
     </a>
 </li>
@@ -129,6 +133,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('cargos.index') }}"
        class="nav-link {{ Request::is('cargos*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>@lang('models/cargos.plural')</p>
     </a>
 </li>
@@ -141,6 +146,7 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('analists.index') }}"
        class="nav-link {{ Request::is('analists*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Analistas</p>
     </a>
 </li>
@@ -148,7 +154,26 @@ $isPermissionActive = Request::is($urlAdmin.'*permissions*');
 <li class="nav-item">
     <a href="{{ route('asignars.index') }}"
        class="nav-link {{ Request::is('asignars*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
         <p>Asignar a analista</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('equipo1s.index') }}"
+       class="nav-link {{ Request::is('equipo1s*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
+        <p>Vincular Piezas y Activos</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('piezas.index') }}"
+       class="nav-link {{ Request::is('piezas*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-coins"></i>
+        <p>@lang('models/piezas.plural')</p>
+    </a>
+</li>
+
+
 

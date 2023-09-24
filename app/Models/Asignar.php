@@ -97,13 +97,19 @@ class Asignar extends Model
 
     public function getEntregaAttribute($value)
     {
+        if($value==null){
+            return null;
+        }
         $fecha=date('d-m-Y', strtotime($value));
         $fecha_array=explode('-', $fecha);
         $fecha=$fecha_array[0].'-'.$fecha_array[1].'-'.$fecha_array[2];
         return $fecha;
     }
     public function getDevueltoAttribute($value)
-    {
+    {   
+        if($value==null){
+            return null;
+        }
         $fecha = date('d-m-Y', strtotime($value));
         $fecha_array = explode('-', $fecha);
         $fecha = $fecha_array[0] . '/' . $fecha_array[1] . '/' . $fecha_array[2];

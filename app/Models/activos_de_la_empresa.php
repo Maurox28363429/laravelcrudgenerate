@@ -72,7 +72,9 @@ class activos_de_la_empresa extends Model
         'modelo',
         'marca',
         'diagnostico',
-        'ODS'
+        "descripcion",
+        'ODS',
+        'serial'
     ];
 
     /**
@@ -86,7 +88,8 @@ class activos_de_la_empresa extends Model
         'modelo' => 'string',
         'marca' => 'string',
         'diagnostico' => 'string',
-        'ODS' => 'string'
+        'ODS' => 'string',
+        'descripcion'=>'string'
     ];
 
     /**

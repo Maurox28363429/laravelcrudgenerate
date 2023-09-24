@@ -21,7 +21,9 @@ class activos_de_la_empresaRepository extends BaseRepository
         'modelo',
         'marca',
         'diagnostico',
-        'ODS'
+        'ODS',
+        'descripcion',
+        "serial"
     ];
 
     /**

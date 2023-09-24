@@ -15,15 +15,24 @@
     {!! Form::label('marca', __('models/activosDeLaEmpresas.fields.marca').':') !!}
     {!! Form::text('marca', null, ['class' => 'form-control']) !!}
 </div>
-
+<!-- Ods Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('ODS', __('models/activosDeLaEmpresas.fields.ODS').':') !!}
+    {!! Form::text('ODS', null, ['class' => 'form-control']) !!}
+</div>
+<!-- Serial Field -->
+<div class="form-group col-sm-6">
+    <label>Serial</label>
+    {!! Form::text('serial', null, ['class' => 'form-control']) !!}
+</div>
 <!-- Diagnostico Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('diagnostico', __('models/activosDeLaEmpresas.fields.diagnostico').':') !!}
     {!! Form::textarea('diagnostico', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Ods Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('ODS', __('models/activosDeLaEmpresas.fields.ODS').':') !!}
-    {!! Form::text('ODS', null, ['class' => 'form-control']) !!}
+<!-- Descripcion Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    <label>Descripción</label>
+    {!! Form::textarea('descripcion', null, ['class' => 'form-control']) !!}
 </div>

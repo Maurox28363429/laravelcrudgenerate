@@ -10,7 +10,8 @@ use App\Repositories\AsignarRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
-
+use App\Models\activos_de_la_empresa;
+use App\Models\herramientas;
 class AsignarController extends AppBaseController
 {
     /** @var  AsignarRepository */
@@ -52,7 +53,14 @@ class AsignarController extends AppBaseController
     public function store(CreateAsignarRequest $request)
     {
         $input = $request->all();
-
+        if($input['Entrega']!=null && $input['Devuelto']==null){
+            if($input['Herramienta']!= 'No asignar'){
+                $herramienta = herramientas::where('Nombre' , $input['Herramienta'])->first();
+                if($herramienta){
+                    $herramienta->update(['stock' => $herramienta->stock - 1]);
+                }
+            }
+        }
         $asignar = $this->asignarRepository->create($input);
 
         Flash::success(__('messages.saved', ['model' => __('models/asignars.singular')]));
@@ -119,7 +127,14 @@ class AsignarController extends AppBaseController
         }
 
         $asignar = $this->asignarRepository->update($request->all(), $id);
-
+        if($asignar->Entrega!=null && $asignar->Devuelto!=null){
+            if($asignar->Herramienta!= 'No asignar'){
+                $herramienta = herramientas::where('Nombre' , $asignar->Herramienta)->first();
+                if($herramienta){
+                    $herramienta->update(['stock' => $herramienta->stock + 1]);
+                }
+            }
+        }
         Flash::success(__('messages.updated', ['model' => __('models/asignars.singular')]));
 
         return redirect(route('asignars.index'));
